@@ -1,6 +1,6 @@
 # Exponential Calculation Using Taylor Series
 
-[![PDF Document](https://img.shields.io/badge/PDF-Document-blue?style=flat&logo=adobe)](link_para_o_pdf)  
+[![PDF Document](https://img.shields.io/badge/PDF-Document-blue?style=flat&logo=adobe)](https://drive.google.com/file/d/1JjpXWa6qqrdpLRKv9WwijLpZjNHL9H_X/view?usp=sharing)  
 
 ## **Project Overview**
 
