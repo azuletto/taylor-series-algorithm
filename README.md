@@ -14,9 +14,7 @@ This project implements a Python program to compute the exponential function $e^
 2. **Handling Negative Values**: Evaluate $e^x$ in two ways for $x < 0$:
    - Directly using the series.
    - Using the transformation $y = -x$ and computing:
-     $$
-     e^x = \frac{1}{e^{-x}}
-     $$
+     $e^x = \frac{1}{e^{-x}}$
 3. **Avoiding Overflow**: Optimize factorial calculations to prevent overflow by performing intermediate divisions.
 4. **Convergence Criterion**: Determine the appropriate stopping condition for the Taylor series expansion.
 5. **Numerical vs Analytical Methods**: Analyze the differences and types of errors in the results.
