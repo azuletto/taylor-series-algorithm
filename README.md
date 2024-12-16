@@ -36,33 +36,25 @@ This project implements a Python program to compute the exponential function $e^
 ### **1. Taylor Series Expansion**
 
 The exponential function $e^x$ can be approximated by the **Taylor Series**:
-$$
-e^x = \sum_{k=0}^n \frac{x^k}{k!}
-$$
+$e^x = \sum_{k=0}^n \frac{x^k}{k!}$
 (where $n$ is the number of terms).
 
 For negative $x$, two approaches are considered:
 1. Direct calculation using $x$ in the series.
 2. Transforming $x$ to $y = -x$ and using:
-   $$
-   e^x = \frac{1}{e^{-x}}
-   $$
+   $e^x = \frac{1}{e^{-x}}$
 
 ### **2. Overflow Prevention**
 
 The factorial $k!$ grows rapidly, leading to overflow. To mitigate this, the $k$-th term in the series $\frac{x^k}{k!}$ is computed iteratively:
-$$
-\text{term}_k = \frac{\text{term}_{k-1} \cdot x}{k}
-$$
+$\text{term}_k = \frac{\text{term}_{k-1} \cdot x}{k}$
 
 This avoids explicit computation of $k!$.
 
 ### **3. Stopping Criterion**
 
 The series calculation terminates when the relative change between consecutive terms becomes negligibly small:
-$$
-\frac{\text{term}_k}{\text{sum}} < \text{threshold}
-$$
+$\frac{\text{term}_k}{\text{sum}} < \text{threshold}$
 where `threshold` is a small predefined value, e.g., $10^{-6}$.
 
 ---
