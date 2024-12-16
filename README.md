@@ -1,33 +1,35 @@
 # Taylor Series Computation in Python
 
-[![View PDF](https://img.shields.io/badge/View-PDF-blue)](link_to_your_pdf_here)  
+Este repositório contém uma implementação em Python para calcular \( e^x \) utilizando a **série de Taylor**. O projeto faz parte da avaliação final da disciplina de **Cálculo Simbólico** no curso de Bacharelado em Ciência da Computação.
 
-This repository contains a Python implementation to compute \( e^x \) using the **Taylor series expansion**. The project was developed as part of an evaluation for the **Symbolic Computation** course in the Computer Science program.  
-
----
-
-## Project Description
-
-This project explores the numerical and analytical computation of \( e^x \) through its Taylor series representation. Key features include:  
-
-1. **Calculation of \( e^x \) for positive and negative values of \( x \):**  
-   - Direct computation using \( x \) in the series.  
-   - Alternate computation using \( y = -x \), followed by \( e^x = 1 / e^{-x} \).  
-
-2. **Optimization for factorial calculation:**  
-   - Avoiding overflow by combining terms incrementally during the computation of \( \frac{x^k}{k!} \).  
-
-3. **Precision control with stopping criteria:**  
-   - The series stops calculating when terms become smaller than a defined threshold.  
-
-4. **Symbolic computation support:**  
-   - The integration of symbolic libraries (e.g., `sympy`) allows comparison of numerical and symbolic results.  
+[![View PDF](https://img.shields.io/badge/View-PDF-blue)](link_para_o_pdf_aqui)
 
 ---
 
-## How to Run
+## Objetivo do Projeto
 
-1. **Clone the Repository:**  
-   ```bash
-   git clone https://github.com/yourusername/your-repository.git
-   cd your-repository
+O programa realiza o cálculo de \( e^x \) com base na expansão da série de Taylor. Os principais aspectos abordados incluem:
+
+1. **Cálculo para \( e^x \):**
+   - Para valores positivos e negativos de \( x \).
+   - Alternativa para valores negativos: \( e^x = 1 / e^{-x} \).
+
+2. **Prevenção de overflow:**
+   - Otimização do cálculo de \( k! \) para evitar valores excessivamente grandes.
+
+3. **Critério de parada:**
+   - Implementação de uma condição para interromper o cálculo com base na contribuição marginal dos termos adicionais.
+
+4. **Suporte a computação simbólica:**
+   - Integração de bibliotecas como `sympy` para validação dos resultados numéricos.
+
+---
+
+## Como Executar
+
+### Requisitos
+
+- Python 3.8 ou superior
+- Instale as dependências com o comando:
+  ```bash
+  pip install -r requirements.txt
