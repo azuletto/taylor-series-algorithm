@@ -48,9 +48,8 @@ For negative $x$, two approaches are considered:
 
 The factorial $k!$ grows rapidly, leading to overflow. To mitigate this, the $k$-th term in the series $\frac{x^k}{k!}$ is computed iteratively:
 
-$$
-\text{term}_k = \frac{\text{term}_{k-1} \cdot x}{k}
-$$
+![equation](https://math.now.sh?from=\text{term}_k%20%3D%20\frac{\text{term}_{k-1}%20\cdot%20x}{k})
+
 
 
 This avoids explicit computation of $k!$.
