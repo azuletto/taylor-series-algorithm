@@ -4,7 +4,7 @@
 
 ## **Project Overview**
 
-This project implements a Python program to compute the exponential function \( e^x \) using its **Taylor Series Expansion**. The program also incorporates optimizations to handle negative values of \( x \), prevent factorial overflow, and determine a stopping criterion for series convergence.
+This project implements a Python program to compute the exponential function \( $e^x \) using its **Taylor Series Expansion**. The program also incorporates optimizations to handle negative values of \( x \), prevent factorial overflow, and determine a stopping criterion for series convergence.
 
 ---
 
